@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-butterfly
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -105,3 +105,32 @@ deploy:
   type: git
   repository: git@github.com:Polar1sssss/Polar1sssss.github.io.git
   branch: main
+
+# 豆瓣插件
+douban:
+  user: 208390738
+  builtin: false
+  book:
+    title: '腹有诗书气自华'
+    quote: 'One who is filled with knowledge always behaves with elegance.'
+  movie:
+    title: '梦想与现实的碰撞'
+    quote: 'The collision between dream and reality.'
+  game:
+    title: '诅咒中闪烁泪光，倾诉霜之哀伤。'
+    quote: 'Tears flicker in the curse and pour out the sorrow of frost.'
+  timeout: 10000
+
+# bilibili插件
+bangumi:
+  enable: true 
+  vmid: 110729709
+  title: '生命不息，追番不止。'
+  quote: 'Where there is life, there is life.'
+  show: 1
+  loading: '/img/bangumi-loading.gif'
+
+# 全局吸底APlayer
+aplayer:
+  meting: true
+  asset_inject: false

@@ -1,0 +1,33 @@
+# 如果你有使用hexo-douban，可配置這個
+douban:
+   meta: true
+   movies_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/movie.jpg
+   books_img: https://cdn.jsdelivr.net/npm/blog-gallery@1.0.0/1/20200206161657.webp
+#   games_img:
+
+menu:
+  首页: / || fas fa-home faa-float animated
+  归档: /archives/ || fas fa-archive faa-float animated
+  标签: /tags/ || fas fa-tags faa-float animated
+  分类: /categories/ || fas fa-folder-open faa-float animated
+  娱乐||fas fa-list faa-float animated:
+    # - 音乐 || /music/ || fas fa-music
+    - 相册 || /gallery/ || fas fa-camera-retro 
+    - 电影 || /movies/ || fas fa-video faa-float animated
+    - 书单 || /books/ || fas fa-book faa-float animated
+    - 游戏 || /games/ || fas fa-gamepad faa-float animated
+  留言板: /comments/ || fas fa-comments faa-float animated
+  友链: /link/ || fas fa-link animated
+  关于: /about/ || fas fa-heart card-announcement-animation faa-float animated
+
+# Inject the css and script (aplayer/meting)
+aplayerInject:
+  enable: true
+  per_page: true
+
+inject:
+  head:
+    - '<style type="text/css">#toggle-sidebar {bottom: 80px}</style>'
+    - '<style type="text/css">#toggle-sidebar {left: 100px}</style>'
+  bottom:
+    - <div class="aplayer no-destroy" data-id="720305850" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-lrctype="1" data-preload="none" data-autoplay="true" muted></div>
