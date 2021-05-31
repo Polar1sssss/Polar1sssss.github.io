@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Polar1sssss
 subtitle: ''
-description: ''
+description: '醉后不知天在水，满船清梦压星河'
 keywords:
-author: John Doe
-language: en
+author: Jiantao Hu
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://github.com/polar1sssss
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -56,6 +56,21 @@ prismjs:
   line_number: true
   tab_replace: ''
 
+# 代码主体
+highlight_theme:  mac
+# 代码复制
+highlight_copy: true
+# 代码框展开
+highlight_shrink: false  
+# 代码换行
+code_word_wrap: true
+# 代码高度限制
+highlight_height_limit: 200px
+
+# 顶部图
+index_img: https://www.pexels.com/zh-cn/photo/844297/
+#archive_img:
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -94,12 +109,12 @@ include:
 exclude:
 ignore:
 
-# Extensions
+# 扩展
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 
-# Deployment
+# 部署
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git

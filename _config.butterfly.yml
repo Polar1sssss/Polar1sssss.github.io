@@ -31,3 +31,114 @@ inject:
     - '<style type="text/css">#toggle-sidebar {left: 100px}</style>'
   bottom:
     - <div class="aplayer no-destroy" data-id="720305850" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-lrctype="1" data-preload="none" data-autoplay="true" muted></div>
+
+# 文章页相关配置
+post_meta: 
+  page:
+   date_type: both
+    # created or updated or both主页文章日期是创建日或者更新日或都显示
+  date_format: relative # date/relative显示日期还是相对日期
+  categories: true # true or false主页是否显示分类
+  tags: true # true or false主页是否显示标签
+  label: true # true or false显示描述性文字
+  post: 
+    date_type: both # created or updated or both文章页日期是创建日或者更新日或都显示
+    date_format: relative # date/relative显示日期还是相对日期
+    categories: true # true or false文章页是否显示分类
+    tags: true # true or false文章页是否显示标签label: true
+
+# 文章版权
+post_copyright: 
+  enable: true 
+  decode: false 
+  license: CC BY-NC-SA 4.0 
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# 打赏
+reward: 
+  enable: true 
+  QR_code: 
+    - img: /img/wechat.jpg 
+      link: 
+        text: 微信
+    - img: /img/alipay.jpg 
+      link: 
+        text: 支付宝
+
+# 相关文章
+related_post: 
+  enable: true
+  limit: 6 #显示推荐文章数目
+  date_type: created # or created or updated文章日期显示创建日或者更新日
+
+# 头像
+avatar: 
+  img: /img/avatar.png 
+  effect: false #头像会一直转圈
+
+# footer设置
+footer: 
+  owner: 
+    enable: true 
+    since: 2021
+
+# 页脚自定义文本
+custom_text:  Hi,  welcome  to  my  <a  href="https://polar1sssss.github.io/">blog</a>!
+
+# 右下角设置-简繁切换
+translate: 
+  enable: true 
+  #默认按钮显示文字(网站是简体，应设置为'default:繁') 
+  default: 简 
+  #网站默认语言，1:繁体中文, 2:简体中文
+  defaultEncoding: 1 
+  #延迟时间,若不在前,要设定延迟翻译时间,如100表示100ms,默认为0 
+  translateDelay: 0
+  #当文字是简体时，按钮显示的文字
+  msgToTraditionalChinese: "繁"
+  #当文字是繁体时，按钮显示的文字
+  msgToSimplifiedChinese: "简"
+
+# 右下角设置-夜间模式 
+darkmode: 
+  enable: true 
+  # dark mode和light mode切换按钮
+  button: true 
+  autoChangeMode: false
+
+# 阅读模式
+readmode: true
+
+# 卡片设置
+aside: 
+  enable: true 
+  hide: false 
+  button: true 
+  mobile: true #手机页面（显示宽度< 768px ）是否显示aside内容
+  position: left # left or right 
+  card_author: 
+    enable: true 
+    description: '醉后不知天在水，满船清梦压星河'
+    button: 
+      enable: true 
+      icon: fab fa-github
+      text: Github 
+      link: https://github.com/polar1sssss
+  card_announcement: 
+    enable: true 
+    content: Polar1sssss's Blog 
+  card_recent_post: 
+    enable: true 
+    limit: 5
+  card_tags color: true
+
+# 访问人数统计
+busuanzi: 
+  site_uv: true 
+  site_pv: true 
+  page_pv: true
+
+# 点击出现爱心
+click_heart:
+  enable: true
+  mobile: false
