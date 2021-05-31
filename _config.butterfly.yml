@@ -11,11 +11,10 @@ menu:
   标签: /tags/ || fas fa-tags faa-float animated
   分类: /categories/ || fas fa-folder-open faa-float animated
   娱乐||fas fa-list faa-float animated:
-    # - 音乐 || /music/ || fas fa-music
-    - 相册 || /gallery/ || fas fa-camera-retro 
-    - 电影 || /movies/ || fas fa-video faa-float animated
-    - 书单 || /books/ || fas fa-book faa-float animated
-    - 游戏 || /games/ || fas fa-gamepad faa-float animated
+    相册: /gallery/ || fas fa-camera-retro 
+    电影: /movies/ || fas fa-video faa-float animated
+    书单: /books/ || fas fa-book faa-float animated
+    游戏: /games/ || fas fa-gamepad faa-float animated
   留言板: /comments/ || fas fa-comments faa-float animated
   友链: /link/ || fas fa-link animated
   关于: /about/ || fas fa-heart card-announcement-animation faa-float animated
@@ -58,10 +57,10 @@ post_copyright:
 reward: 
   enable: true 
   QR_code: 
-    - img: /img/wechat.jpg 
+    - img: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/wechat.jpg
       link: 
         text: 微信
-    - img: /img/alipay.jpg 
+    - img: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/alipay.jpg
       link: 
         text: 支付宝
 
@@ -73,7 +72,7 @@ related_post:
 
 # 头像
 avatar: 
-  img: /img/avatar.png 
+  img: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/avatar.jpg 
   effect: false #头像会一直转圈
 
 # footer设置

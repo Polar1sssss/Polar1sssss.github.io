@@ -13,7 +13,8 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://github.com/polar1sssss
+url: https://Polar1sssss.github.io/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -57,7 +58,7 @@ prismjs:
   tab_replace: ''
 
 # 代码主体
-highlight_theme:  mac
+highlight_theme: mac
 # 代码复制
 highlight_copy: true
 # 代码框展开
@@ -68,8 +69,7 @@ code_word_wrap: true
 highlight_height_limit: 200px
 
 # 顶部图
-index_img: https://www.pexels.com/zh-cn/photo/844297/
-#archive_img:
+top_img: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/index_img.jpg
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -149,3 +149,10 @@ bangumi:
 aplayer:
   meting: true
   asset_inject: false
+
+# 图标配置
+favicon:
+  small: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/favicon.png
+  #medium: /images/favicon-32x32-next.png
+  medium: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/favicon.png
+  #android_manifest: /manifest.json
