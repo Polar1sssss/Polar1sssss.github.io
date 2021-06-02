@@ -187,7 +187,7 @@ valine:
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: zh-CN
   placeholder: 记得留下你的昵称和邮箱...可以快速收到回复 # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: nick,mail #valine comment header info (nick/mail/link)
+  guest_info: 昵称,邮箱,link #valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: /img/comment_bg.png # valine background
