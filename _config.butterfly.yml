@@ -1,3 +1,34 @@
+# 网站图标
+favicon: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/favicon.png
+
+index_img: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/index_img.jpg
+
+subtitle:
+  enable: true
+  # Typewriter Effect (打字效果)
+  effect: true
+  # loop (循環打字)
+  loop: true
+  # source調用第三方服務
+  # source: false 關閉調用
+  # source: 1  調用搏天api的隨機語錄（簡體） https://api.btstu.cn/
+  # source: 2  調用一言網的一句話（簡體） https://hitokoto.cn/
+  # source: 3  調用一句網（簡體） http://yijuzhan.com/
+  # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
+  # subtitle 會先顯示 source , 再顯示 sub 的內容
+  source: false
+  # 如果有英文逗號' , ',請使用轉義字元 &#44;
+  # 如果有英文雙引號' " ',請使用轉義字元 &quot;
+  # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
+  # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
+  sub: 
+    - 天行健 君子以自强不息 | 地势乾 君子以厚德载物
+
+# 头像
+avatar: 
+  img: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/avatar.jpg 
+  effect: false #头像会一直转圈
+
 # 如果你有使用hexo-douban，可配置這個
 douban:
    meta: true
@@ -6,18 +37,18 @@ douban:
 #   games_img:
 
 menu:
-  首页: / || fas fa-home faa-float animated
-  归档: /archives/ || fas fa-archive faa-float animated
-  标签: /tags/ || fas fa-tags faa-float animated
-  分类: /categories/ || fas fa-folder-open faa-float animated
-  娱乐||fas fa-list faa-float animated:
-    相册: /gallery/ || fas fa-camera-retro 
-    电影: /movies/ || fas fa-video faa-float animated
-    书单: /books/ || fas fa-book faa-float animated
-    游戏: /games/ || fas fa-gamepad faa-float animated
-  留言板: /comments/ || fas fa-comments faa-float animated
-  友链: /link/ || fas fa-link animated
-  关于: /about/ || fas fa-heart card-announcement-animation faa-float animated
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  娱乐||fas fa-list:
+    图库: /gallery/ || fas fa-camera-retro 
+    电影: /movies/ || fas fa-video
+    书单: /books/ || fas fa-book
+    游戏: /games/ || fas fa-gamepad
+  留言板: /comments/ || fas fa-comments
+  友链: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart card-announcement-animation
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
@@ -28,6 +59,7 @@ aplayerInject:
 inject:
   head:
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/css/background.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/css/macblack.css">
     #- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/pool.min.css">
     #- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/iconfont.min.css"> 
   bottom: 
@@ -61,22 +93,17 @@ reward:
   enable: true 
   QR_code: 
     - img: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/wechat.jpg
-      link: 
-        text: 微信
+      link: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/wechat.jpg
+      text: 微信
     - img: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/alipay.jpg
-      link: 
-        text: 支付宝
+      link: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/alipay.jpg
+      text: 支付宝
 
 # 相关文章
 related_post: 
   enable: true
   limit: 6 #显示推荐文章数目
   date_type: created # or created or updated文章日期显示创建日或者更新日
-
-# 头像
-avatar: 
-  img: https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/blog/avatar.jpg 
-  effect: false #头像会一直转圈
 
 # footer设置
 footer: 
@@ -128,7 +155,7 @@ aside:
       link: https://github.com/polar1sssss
   card_announcement: 
     enable: true 
-    content: Welcome to Polar1sssss's Blog 
+    content: Welcome to Polar1sssss's Blog !
   card_recent_post: 
     enable: true 
     limit: 5
