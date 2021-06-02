@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://polar1sssss.github.io/comments/index.html</loc>
+    
+    <lastmod>2021-06-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://polar1sssss.github.io/about/index.html</loc>
+    
+    <lastmod>2021-06-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://polar1sssss.github.io/2021/05/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</loc>
+    
+    <lastmod>2021-06-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://polar1sssss.github.io/bangumis/index.html</loc>
     
     <lastmod>2021-05-31</lastmod>
@@ -37,13 +58,6 @@
   </url>
   
   <url>
-    <loc>https://polar1sssss.github.io/2021/05/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</loc>
-    
-    <lastmod>2021-05-31</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://polar1sssss.github.io/2021/05/28/hello-world/</loc>
     
     <lastmod>2021-05-27</lastmod>
@@ -53,7 +67,7 @@
 
   <url>
     <loc>https://polar1sssss.github.io/</loc>
-    <lastmod>2021-06-01</lastmod>
+    <lastmod>2021-06-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -61,7 +75,7 @@
   
   <url>
     <loc>https://polar1sssss.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2021-06-01</lastmod>
+    <lastmod>2021-06-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
