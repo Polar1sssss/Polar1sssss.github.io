@@ -249,45 +249,10 @@ note:
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
 
-# 背景图
-# background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
+# 背景
+background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
 
-# 静态彩带
-canvas_ribbon:
+# 动态彩带
+canvas_fluttering_ribbon:
   enable: true
-  size: 150
-  alpha: 0.6
-  zIndex: -1
-  click_to_change: true  # 设置每次点击更换彩带
-  mobile: false # 手机端是否显示
-
-# md页面美化
-beautify:
-  enable: true
-  field: site # site/post
-  title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: "#F47466"
-
-# 全局字体
-font:
-  global-font-size:
-  code-font-size:
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
-  code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
-
-# Blog标题字体
-blog_title_font:
-  font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
-  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
-
-# 提示框弹出设置
-snackbar:
-  enable: true
-  position: top-right
-  bg_light: '#49b1f5' #light mode時彈窗背景
-  bg_dark: '#2d3035' #dark mode時彈窗背景
-
-# 中英文之间添加空格
-pangu:
-  enable: true
-  field: site # site/post
+  mobile: false 

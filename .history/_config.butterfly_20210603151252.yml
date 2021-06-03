@@ -283,11 +283,6 @@ blog_title_font:
 # 提示框弹出设置
 snackbar:
   enable: true
-  position: top-right
+  position: bottom-left
   bg_light: '#49b1f5' #light mode時彈窗背景
   bg_dark: '#2d3035' #dark mode時彈窗背景
-
-# 中英文之间添加空格
-pangu:
-  enable: true
-  field: site # site/post

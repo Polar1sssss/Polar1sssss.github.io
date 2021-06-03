@@ -252,16 +252,16 @@ note:
 # 背景图
 # background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
 
-# 静态彩带
+# 动态彩带
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 150
   alpha: 0.6
   zIndex: -1
-  click_to_change: true  # 设置每次点击更换彩带
-  mobile: false # 手机端是否显示
+  click_to_change: true  #設置是否每次點擊都更換綵帶
+  mobile: false # false 手機端不顯示 true 手機端顯示
 
-# md页面美化
+# 美化頁面顯示
 beautify:
   enable: true
   field: site # site/post
@@ -279,15 +279,3 @@ font:
 blog_title_font:
   font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
   font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
-
-# 提示框弹出设置
-snackbar:
-  enable: true
-  position: top-right
-  bg_light: '#49b1f5' #light mode時彈窗背景
-  bg_dark: '#2d3035' #dark mode時彈窗背景
-
-# 中英文之间添加空格
-pangu:
-  enable: true
-  field: site # site/post
