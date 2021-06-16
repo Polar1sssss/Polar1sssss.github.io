@@ -250,7 +250,7 @@ note:
   light_bg_offset: 0
 
 # 背景图
-background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
+# background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
 
 # 静态彩带
 canvas_ribbon:
