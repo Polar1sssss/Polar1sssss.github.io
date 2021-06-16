@@ -6,7 +6,7 @@
   <link href="https://polar1sssss.github.io/atom.xml" rel="self"/>
   
   <link href="https://polar1sssss.github.io/"/>
-  <updated>2021-05-27T09:58:33.713Z</updated>
+  <updated>2021-06-10T10:30:04.796Z</updated>
   <id>https://polar1sssss.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网站收藏</title>
+    <link href="https://polar1sssss.github.io/2021/06/10/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/"/>
+    <id>https://polar1sssss.github.io/2021/06/10/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</id>
+    <published>2021-06-10T10:26:14.000Z</published>
+    <updated>2021-06-10T10:30:04.796Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="不死鸟-分享为王"><a href="#不死鸟-分享为王" class="headerlink" title="不死鸟 分享为王"></a>不死鸟 分享为王</h2><p>网址：<a href="https://iao.su/">https://iao.su/</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;不死鸟-分享为王&quot;&gt;&lt;a href=&quot;#不死鸟-分享为王&quot; class=&quot;headerlink&quot; title=&quot;不死鸟 分享为王&quot;&gt;&lt;/a&gt;不死鸟 分享为王&lt;/h2&gt;&lt;p&gt;网址：&lt;a href=&quot;https://iao.su/&quot;&gt;https://iao.su/&lt;/</summary>
+      
+    
+    
+    
+    
+    <category term="收藏" scheme="https://polar1sssss.github.io/tags/%E6%94%B6%E8%97%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -33,29 +55,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>我的第一篇博客文章</title>
-    <link href="https://polar1sssss.github.io/2021/05/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
-    <id>https://polar1sssss.github.io/2021/05/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</id>
-    <published>2021-05-28T02:07:18.000Z</published>
-    <updated>2021-06-01T10:05:00.940Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p><hr>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;hr&gt;
-&lt;h2 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h2&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr</summary>
-      
-    
-    
-    
-    
-    <category term="测试" scheme="https://polar1sssss.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
