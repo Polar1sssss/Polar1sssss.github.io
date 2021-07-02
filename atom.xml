@@ -6,7 +6,7 @@
   <link href="https://polar1sssss.github.io/atom.xml" rel="self"/>
   
   <link href="https://polar1sssss.github.io/"/>
-  <updated>2021-06-10T10:30:04.796Z</updated>
+  <updated>2021-07-02T09:13:09.189Z</updated>
   <id>https://polar1sssss.github.io/</id>
   
   <author>
@@ -17,18 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>谷粒商城项目-前置知识及环境搭建</title>
+    <link href="https://polar1sssss.github.io/2021/07/02/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E%E9%A1%B9%E7%9B%AE-%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86%E5%8F%8A%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>https://polar1sssss.github.io/2021/07/02/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E%E9%A1%B9%E7%9B%AE-%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86%E5%8F%8A%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
+    <published>2021-07-02T09:10:07.000Z</published>
+    <updated>2021-07-02T09:13:09.189Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="分布式基础概念"><a href="#分布式基础概念" class="headerlink" title="分布式基础概念"></a>分布式基础概念</h1><h2 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h2><h2 id="集群-amp-分布式-amp-节点"><a href="#集群-amp-分布式-amp-节点" class="headerlink" title="集群&amp;分布式&amp;节点"></a>集群&amp;分布式&amp;节点</h2><ul><li><p>集群是个物理形态，分布式是个工作方式。</p></li><li><p>分布式是指不同的业务分布在不同的地方；集群指的是将几台服务器集中在一起，实现同一业务。</p></li><li><p>分布式中的每个节点，都可以做集群；而集群不一定就是分布式。</p></li></ul><h2 id="远程调用"><a href="#远程调用" class="headerlink" title="远程调用"></a>远程调用</h2><p>在分布式系统中，各个服务可能处于不同的主机，服务之间不可避免需要互相调用，称为远程调用。SpringCloud中使用HTTP + JSON完成远程调用。</p><h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><p>常见的负载均衡算法：</p><p>轮询：为第一个请求选择健康池中的第一个后端服务器，后续请求按照顺序依次选择服务器，直到最后一个，之后循环。</p><p>最小连接数：优先选择连接数最少的服务器。在会话较长的情况下可以考虑采用这种方式。</p><p>散列：根据请求源IP的散列（hash）来选择要转发的服务器。这种方式可以一定程度上保证特定用户能够连接到相同的服务器。如果应用需要处理状态而要求用户能够连接到与之前相同的服务器，可以考虑这种方式。</p><h2 id="服务注册-发现-amp-注册中心"><a href="#服务注册-发现-amp-注册中心" class="headerlink" title="服务注册/发现&amp;注册中心"></a>服务注册/发现&amp;注册中心</h2><p>A服务调用B服务，A服务想要知道B服务处在哪几台服务器以及服务器的状态，需要引入注册中心。如果某些服务已下线，可以感知到服务器状态的变化，从而避免调用不可用的服务。</p><h2 id="配置中心"><a href="#配置中心" class="headerlink" title="配置中心"></a>配置中心</h2><h2 id="服务熔断-amp-服务降级"><a href="#服务熔断-amp-服务降级" class="headerlink" title="服务熔断&amp;服务降级"></a>服务熔断&amp;服务降级</h2><ul><li>服务熔断：设置服务超时时间，当被调用的服务失败次数达到某个阈值，直接开启断路保护机制，后续的请求不再去调用这个服务，本地直接返回默认的数据。</li><li>服务降级：在运维期间，当系统处于高峰期，系统资源紧张，可以让某些非核心业务降级运行。降级：某些服务不处理，或者简单处理（抛异常、返回NULL、调用Mock数据、调用Fallback处理逻辑）。</li></ul><h2 id="API网关"><a href="#API网关" class="headerlink" title="API网关"></a>API网关</h2><p>API网关抽象了微服务中都需要的功能，同时提供了客户端负载均衡，服务自动熔断，灰度发布，统一认证，限流流控，日志统计等丰富的功能。</p><h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><p><img src="https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/img/guli001.png"></p><p><img src="https://cdn.jsdelivr.net/gh/Polar1sssss/FigureBed/img/guli002.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;分布式基础概念&quot;&gt;&lt;a href=&quot;#分布式基础概念&quot; class=&quot;headerlink&quot; title=&quot;分布式基础概念&quot;&gt;&lt;/a&gt;分布式基础概念&lt;/h1&gt;&lt;h2 id=&quot;微服务&quot;&gt;&lt;a href=&quot;#微服务&quot; class=&quot;headerlink&quot; title=</summary>
+      
+    
+    
+    
+    
+    <category term="Java" scheme="https://polar1sssss.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>网站收藏</title>
     <link href="https://polar1sssss.github.io/2021/06/10/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/"/>
     <id>https://polar1sssss.github.io/2021/06/10/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</id>
     <published>2021-06-10T10:26:14.000Z</published>
-    <updated>2021-06-10T10:30:04.796Z</updated>
+    <updated>2021-06-16T09:56:14.448Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="不死鸟-分享为王"><a href="#不死鸟-分享为王" class="headerlink" title="不死鸟 分享为王"></a>不死鸟 分享为王</h2><p>网址：<a href="https://iao.su/">https://iao.su/</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="不死鸟-分享为王"><a href="#不死鸟-分享为王" class="headerlink" title="不死鸟 分享为王"></a>不死鸟 分享为王</h2><p>分享一些不错的资源：<a href="https://iao.su/">https://iao.su/</a></p><h2 id="编程导航"><a href="#编程导航" class="headerlink" title="编程导航"></a>编程导航</h2><p>程序员必备网站：<a href="https://www.code-nav.cn/">https://www.code-nav.cn/</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;不死鸟-分享为王&quot;&gt;&lt;a href=&quot;#不死鸟-分享为王&quot; class=&quot;headerlink&quot; title=&quot;不死鸟 分享为王&quot;&gt;&lt;/a&gt;不死鸟 分享为王&lt;/h2&gt;&lt;p&gt;网址：&lt;a href=&quot;https://iao.su/&quot;&gt;https://iao.su/&lt;/</summary>
+    <summary type="html">&lt;h2 id=&quot;不死鸟-分享为王&quot;&gt;&lt;a href=&quot;#不死鸟-分享为王&quot; class=&quot;headerlink&quot; title=&quot;不死鸟 分享为王&quot;&gt;&lt;/a&gt;不死鸟 分享为王&lt;/h2&gt;&lt;p&gt;分享一些不错的资源：&lt;a href=&quot;https://iao.su/&quot;&gt;https://ia</summary>
       
     
     
