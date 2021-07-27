@@ -81,7 +81,7 @@ docker pull kibana -- 可视化检索
 1. 启动docker
 
     ```bash
-    docker run --name elasticsearch -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e ES_JAVA_OPTS="-Xms64m -Xmx128m" -v /mydata/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml -v /mydata/elasticsearch/data:/usr/share/elasticsearch/data -v /mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins -d elasticsearch:7.4.2 
+    docker run --name elasticsearch -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e ES_JAVA_OPTS="-Xms64m -Xmx512m" -v /mydata/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml -v /mydata/elasticsearch/data:/usr/share/elasticsearch/data -v /mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins -d elasticsearch:7.4.2 
     ```
 
 ### Kibana
@@ -561,13 +561,49 @@ GET my_index/_analyze
 
 修改/usr/share/elasticsearch/plugins/ik/config/中的IKAnalyzer.cfg.xml
 
-# JestClient
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>IK Analyzer扩展配置</comment>
+    <entry key="ext_dict"></entry>
+    <extry key="ext_stopwords"></extry>
+    <!--用户可以在这里配置远程扩展词典-->
+    <entry key="remote_ext_dict">http://192.168.128.130/fenci/myword.txt</entry>
+    <!--<entry key="remote_ext_stopwords">words_location</entry>-->
+</properties>
+```
 
-## SpringBoot整合high-level-client
+# Elasticsearch-Rest-Client
 
-## 配置
-
-## 使用
+1. 9300：TCP
+   - spring-data-elasticsearch:transport-api.jar
+     - springboot版本不同，transport-api.jar不同，不能适配es版本
+     - 7.x不建议使用，8之后废弃
+2. 9200：HTTP
+   - JestClient：非官方，更新慢
+   - RestTemplate：模拟发送HTTP请求，ES很多操作需要自己封装
+   - HttpClient：同上
+   - Elasticsearch-Rest-Client（elasticsearch-rest-high-level-client）：官方RestClient，封装了ES操作，API层次分明
 
 # 附录：安装Nginx
 
+- 随便启动一个Nginx实例，为了复制配置
+
+  ​	docker run -p 80:80 --name nginx -d nginx:1.10
+
+- 将容器内的配置文件拷贝到当前目录：docker container cp nginx:/etc/nginx .
+
+- 修改文件名称：mv nginx conf，把这个conf移动到/mydata/nginx下
+
+- 终止原容器：docker stop nginx
+
+- 执行命令删除原容器：docker rm  $ContainerId
+
+- 创建新的nginx，执行以下命令：
+
+  ```bash
+  docker run -p 80:80 --name nginx -v /mydata/nginx/html:/usr/share/nginx/html -v /mydata/nginx/logs:/var/log/nginx -v /mydata/nginx/conf:/etc/nginx -d nginx:1.10
+  ```
+
+  
